@@ -47,4 +47,6 @@ if ($name == "") {
     $msg['success'] = "\n Email has been sent successfully.";
     $msg['code'] = TRUE;
 }
-echo json_encode($msg);
+session_start();
+$_SESSION['message'] = json_encode($msg);
+header("Location: index.php");
