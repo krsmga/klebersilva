@@ -17888,6 +17888,10 @@ span.sr-only {
   border-radius: 8px;
 }
 
+.portfolio-style-two .carousel-inner .carousel-item .portfolio-single .thumbnail iframe {  
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-style-two .carousel-inner .carousel-item .portfolio-single .thumbnail {
     margin-bottom: 50px;
