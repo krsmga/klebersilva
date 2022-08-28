@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/icomoon.css">
+
+    <!-- Scripts-->
+    <script type="text/javascript" src="assets/js/browser-detect.js"></script>
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -61,13 +64,16 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#testimonial">Referências</a>
-                            </li>                            
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Sobre mim</a>
+                            </li>
                         </ul>
                         <!-- End Mainmanu Nav -->
 
                     </nav>
 
-                    <!-- Start Download CV  -->
+                    <!-- Start Download CV  
                     <div class="header-right">
                         <a class="rn-btn" target="_blank" href="#">
                             <span>Download CV</span>
@@ -81,7 +87,7 @@
                             </span>
                         </div>
                     </div>
-                    <!-- End Download CV  -->
+                     End Download CV  -->
 
                 </div>
             </div>
@@ -126,7 +132,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link smoth-animation" href="#testimonial">Referências</a>
-                    </li>                     
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-animation" href="#about">Sobre mim</a>
+                    </li>
                 </ul>
 
                 <!-- social sharea area -->
@@ -263,7 +272,16 @@
         </div>
         <!-- End Slider Area -->
 
-        <script type="text/javascript" src="assets/js/browser-detect.js"></script>
+        <script type="text/javascript">
+            if (getBrowser() == 'safari') 
+            {
+                var element = document.getElementById('video-banner');
+                element.classList.add('hidden');
+            } else {
+                var element = document.getElementById('image-banner');
+                element.classList.add('hidden');
+            }
+        </script>
 
         <!-- Start Service Area -->
         <div class="rn-service-area rn-section-gap section-separator" id="features">
@@ -423,11 +441,19 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      </div>
                     <div class="carousel-inner">
                         <!-- Start Single Item  -->
-                        <div class="carousel-item active">
+                        <div class="carousel-item vertical-full active">
                             <div class="portfolio-single">
-                                <div class="row direction">
+                                <div class="row direction vertical-full">
                                     <div class="col-lg-5">
                                         <div class="inner">
                                             <h5 class="title">
@@ -437,7 +463,7 @@
                                                 Foi um dos trabalhos com maior importância e que merece destaque. O Unicesumar XP, 
                                                 é um aplicativo para Android e iOS, desenvolvido na <strong>Unity</strong> com o objetivo de levar 
                                                 aos estudantes uma forma inovadora de aprender. Oferece elementos pedagógicos com 
-                                                Realidade Aumentada, Virtual e Games desenhados através de uma metodologia 
+                                                <strong>Realidade Aumentada</strong>, <strong>Virtual</strong> e <strong>Games</strong> desenhados através de uma metodologia 
                                                 de ensino que permite que o aluno estude de forma assertiva, divertida e interativa. 
                                                 Confira o vídeo produzido para o lançamento.
                                             </p>
@@ -477,9 +503,9 @@
                         <!-- End Single Item  -->
 
                         <!-- Start Single Item  -->
-                        <div class="carousel-item">
+                        <div class="carousel-item vertical-full">
                             <div class="portfolio-single">
-                                <div class="row direction">
+                                <div class="row direction vertical-full">
                                     <div class="col-lg-5">
                                         <div class="inner">
                                             <h5 class="title">
@@ -532,21 +558,76 @@
                         <!-- End Single Item  -->
 
                         <!-- Start Single Item  -->
-                        <div class="carousel-item">
+                        <div class="carousel-item vertical-full">
                             <div class="portfolio-single">
-                                <div class="row direction">
+                                <div class="row direction vertical-full">
+                                    <div class="col-lg-5">
+                                        <div class="inner">
+                                            <h5 class="title">
+                                                Game Resort Hotel
+                                            </h5>
+                                            <p class="discription">
+                                                Um case interessante ocorreu durante o ápice da pandemia de Covid. Os alunos do curso 
+                                                de educação física que estavam no período do estágio obrigatório, ficaram impedidos de 
+                                                realizar as atividades presenciais. Quando este fato chegou ao nosso conhecimento 
+                                                elaboramos a proposta de um game que pudesse substituir o estágio presencial. 
+                                                Desta forma o aluno poderia exercer suas atividades, ser avaliado por isso e obter o 
+                                                certificado necessário para a conclusão do curso.
+                                            </p>
+                                            <div class="ft-area">
+                                                <div class="feature-wrapper">
+                                                    <div class="single-feature">
+                                                        <i data-feather="check"></i>
+                                                        <p>Projetado em conjunto com os professores;</p>
+                                                    </div>
+                                                    <div class="single-feature">
+                                                        <i data-feather="check"></i>
+                                                        <p>Obedece aos requisitos da ementa do curso;</p>
+                                                    </div>
+                                                    <div class="single-feature">
+                                                        <i data-feather="check"></i>
+                                                        <p>Avalia as habilidades desejadas no estágio;</p>
+                                                    </div>
+                                                    <div class="single-feature">
+                                                        <i data-feather="check"></i>
+                                                        <p>O aluno aprende enquanto joga;</p>
+                                                    </div>
+                                                    <div class="single-feature">
+                                                        <i data-feather="check"></i>
+                                                        <p>Gera um certificado de conclusão.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-7">
+                                        <div class="thumbnail">
+                                            <video controls preload="auto" poster="assets/videos/game-resort-hotel-720p.jpg">
+                                                <source src="assets/videos/game-resort-hotel-720p.webm" type="video/webm">
+                                                <source src="assets/videos/game-resort-hotel-720p.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item  -->                        
+
+                        <!-- Start Single Item  -->
+                        <div class="carousel-item vertical-full">
+                            <div class="portfolio-single">
+                                <div class="row direction vertical-full">
                                     <div class="col-lg-5">
                                         <div class="inner">
                                             <h5 class="title">
                                                 Autor do Livro Unity Game 2D
                                             </h5>
                                             <p class="discription">
-                                                Um dos desafios mais instigantes foi com toda certeza produzir um curso completo de 
-                                                desenvolvimento de games 2D na Unity. Desde a concepção, roteirização, escrita do 
-                                                material didático e produção das aulas em vídeo. Foi uma grata satisfação ser autor desta 
-                                                obra, onde converso com o estudante guiando em uma jornada muito divertida. 
-                                                Por razões de direitos autorais, não posso publicá-lo aqui na íntegra. 
-                                                É uma pena, ele é incrível.
+                                                Um dos desafios mais instigantes foi com toda a certeza produzir um curso de 
+                                                desenvolvimento de games 2D na Unity. Desde a concepção, roteirização, escrita e 
+                                                produção das aulas em vídeo. Foi uma grata satisfação ser autor desta obra, onde 
+                                                converso e guio o estudante através de uma jornada muito divertida. Por razões de 
+                                                direitos autorais, não posso publicá-lo aqui na íntegra. É uma pena, ele é incrível.
                                             </p>
                                             <div class="ft-area">
                                                 <div class="feature-wrapper">
@@ -564,11 +645,7 @@
                                                     </div>
                                                     <div class="single-feature">
                                                         <i data-feather="check"></i>
-                                                        <p>Personagem;</p>
-                                                    </div>
-                                                    <div class="single-feature">
-                                                        <i data-feather="check"></i>
-                                                        <p>Colisão e física;</p>
+                                                        <p>Personagem, colisão e física;</p>
                                                     </div>
                                                     <div class="single-feature">
                                                         <i data-feather="check"></i>
@@ -583,8 +660,8 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-7">
-                                        <div class="thumbnail">
-                                            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/39ea21becf.html" style="width: 100%; height: 403px;"></iframe>
+                                        <div id="iframe-happycode" class="thumbnail">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -593,9 +670,9 @@
                         <!-- End Single Item  -->
 
                         <!-- Start Single Item  -->
-                        <div class="carousel-item">
+                        <div class="carousel-item vertical-full">
                             <div class="portfolio-single">
-                                <div class="row direction">
+                                <div class="row direction vertical-full">
                                     <div class="col-lg-5">
                                         <div class="inner">
                                             <h5 class="title">
@@ -637,6 +714,42 @@
                             </div>
                         </div>
                         <!-- End Single Item  -->                        
+
+                        <!-- Start Single Item  -->
+                        <div class="carousel-item vertical-full">
+                            <div class="portfolio-single">
+                                <div class="row direction vertical-full">
+                                    <div class="col-lg-5">
+                                        <div class="inner">
+                                            <h5 class="title">
+                                                Artigo sobre inovação no ensino híbrido
+                                            </h5>
+                                            <p class="discription">
+                                                Em 2019 escrevi um artigo chamado <strong>METODOLOGIA DE DESENVOLVIMENTO DE AMBIENTES DE 
+                                                REALIDADE AUMENTADA NO ENSINO HÍBRIDO</strong>, para a 25º CIAED-ABED, apresentando o trabalho 
+                                                que estávamos realizando com o Unicesumar XP no quadro "Abordagens Híbridas no Ensino-
+                                                Aprendizagem na EAD". O intuito era demonstrar não só, um recurso inovador, mas 
+                                                como era a metodologia de desenvolvimento e complexidade dos processos. Foi uma 
+                                                experiência enriquecedora que resultou em ótimos resultados. Aqui você pode assistir ao teaser 
+                                                que criei para o artigo.
+                                            </p>   
+                                            <a href="https://heyzine.com/flip-book/285d8e5912.html" target="_blank">
+                                                <i data-feather="book-open"></i> Veja o artigo na íntegra 
+                                            </a>                                         
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-7">
+                                        <div class="thumbnail">
+                                            <video controls preload="auto" poster="assets/videos/teaser-artigo-720p.jpg">
+                                                <source src="assets/videos/teaser-artigo-720p.webm" type="video/webm">
+                                                <source src="assets/videos/teaser-artigo-720p.mp4" type="video/mp4">                                                
+                                            </video>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item  -->                        
                     </div>
 
                     <button class="carousel-control-prev" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -650,6 +763,24 @@
             </div>
         </div>
         <!-- End portfolio Area -->
+
+        <script type="text/javascript" defer>
+            if (getBrowser() != 'edge')  
+            {
+                var elementCreate = document.createElement('iframe');
+                elementCreate.src = "https://heyzine.com/flip-book/39ea21becf.html";
+                elementCreate.allowFullscreen = "allowfullscreen";
+                elementCreate.scrolling = "no";
+                elementCreate.className = "fp-iframe";
+                elementCreate.style = "width: 100%; height: 403px;";
+            } else {
+                var elementCreate = document.createElement('img');
+                elementCreate.src = "assets/images/about/livroaberto.jpg";
+            }
+            var element = document.getElementById('iframe-happycode');
+            element.appendChild(elementCreate);
+        </script>        
+
         
         <!-- Start Resume Area -->
         <div class="rn-resume-area rn-section-gap section-separator" id="resume">
@@ -1247,6 +1378,44 @@
             </div>
         </div>
         <!-- End Testimonia Area  -->
+
+        <!-- Start about Area -->
+        <div id="about" class="rn-about-area rn-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="image-area">
+                            <div class="thumbnail">
+                                <img src="assets/images/about/about-2.jpg" alt="Personal Portfolio Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="col-lg-7 mt_sm--30">
+                        <div class="contant">
+                            <div class="section-title text-left">
+                                <span class="subtitle"><img src="assets/images/icons/spock.png">vida longa e próspera</span>
+                                <h2 class="title">Sobre mim</h2>
+                            </div>
+                            <p class="discription">
+                                Louco por livros, quadrinhos e cinéfilo com orgulho. Escritor nas horas vagas, nunca perco uma boa história, 
+                                ainda mais se for ficção; Agatha Christie é livro de cabeceira e De Volta Para o Futuro jamais será cansativo.
+                            </p>
+                            <p class="discription">
+                                Avengers Assemble é um mantra e o meu mundo é o desenvolvimento de programas, não importa a linguagem. 
+                                Projetos de eletrônica é um passatempo, aviões e arco e flecha são diversão. 
+                                Heavy Metal é o que ajuda a me concentrar e não tenho coordenação motora para instrumentos musicais.
+                            </p>                                
+                            <p class="discription"> 
+                                Ainda entre as minhas preferências estão a modelagem 3D, a realidade aumentada e virtual, assim como o 
+                                desenvolvimento de games que me trouxeram até aqui.
+                            </p>
+                            <!--<a class="rn-btn" href="#contacts"><span>DOWNLOAD MY CV</span></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End about Area -->        
 
         <!-- Modal Portfolio Body area Start -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">

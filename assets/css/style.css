@@ -12570,6 +12570,13 @@ figcaption {
   font-family: var(--font-secondary);
   font-weight: 500;
 }
+.section-title span.subtitle img {
+    width: 25px;
+    margin-right: 8px;
+    animation: hand-shaking 0.5s;
+    animation-iteration-count: infinite;
+}
+
 .section-title h2.title {
   font-size: 60px;
   font-weight: 700;
@@ -16680,6 +16687,7 @@ span.sr-only {
   position: relative;
   transform: translateY(-50%);
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rn-about-area .contant {
     padding-top: 40px;
@@ -17862,9 +17870,15 @@ span.sr-only {
 }
 .portfolio-style-two .carousel-inner {
   border-radius: 8px;
+  height: 550px;
 }
+.vertical-full {
+    height: 100%;
+}
+
 .portfolio-style-two .carousel-inner .carousel-item .portfolio-single {
   margin: 0;
+  height: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-style-two .carousel-inner .carousel-item .portfolio-single .direction {
@@ -17872,6 +17886,9 @@ span.sr-only {
   }
 }
 @media only screen and (max-width: 767px) {
+    .portfolio-style-two .carousel-inner {
+        height: auto;
+    }
   .portfolio-style-two .carousel-inner .carousel-item .portfolio-single .direction {
     flex-direction: column-reverse;
   }
@@ -17890,6 +17907,13 @@ span.sr-only {
 
 .portfolio-style-two .carousel-inner .carousel-item .portfolio-single .thumbnail iframe {  
   border-radius: 8px;
+}
+
+.portfolio-style-two .carousel-inner .carousel-item .portfolio-single .thumbnail p {  
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-lightn);
+    margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
