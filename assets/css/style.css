@@ -12573,7 +12573,9 @@ figcaption {
 
 .section-title span.subtitle img {
     width: 25px;
+    margin-top: 0px;
     margin-right: 8px;
+    margin-left: 5px;
     animation: hand-shaking 0.5s;
     animation-iteration-count: infinite;
 }
