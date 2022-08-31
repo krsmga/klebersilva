@@ -15306,6 +15306,10 @@ body.modal-open {
     padding-left: 2rem;
 }
 
+.modal .modal-dialog .modal-content .modal-body .text-portfolio {
+    padding-left: 0;
+}
+
 .modal .modal-dialog .modal-content .modal-body .text-content h3 {
     margin-bottom: 10px;
     font-size: var(--font-size-h4);
@@ -15363,6 +15367,10 @@ body.modal-open {
     position: relative;
     margin-right: -13px;
     width: 19px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .text-portfolio a svg {
+    margin-right: 0;
 }
 
 .modal .featured-project-carousel .carousel-indicators {
@@ -18615,8 +18623,23 @@ span.sr-only {
     margin: 0;
 }
 
+.portfolio-popup-thumbnail {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .portfolio-popup-thumbnail img {
-    border-radius: 10px;
+    border-radius: 0.5rem;
+}
+
+.portfolio-popup-thumbnail video {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.portfolio-popup-thumbnail iframe {
+    border-radius: 0.5rem;
 }
 
 .rn-testimonial-carousel.carousel .carousel-indicators {
@@ -19274,13 +19297,17 @@ span.sr-only {
     margin: 0;
 }
 
+.rn-portfolio .inner .content .description {
+    font-size: var(--font-size-md);
+}
+
 .rn-portfolio .inner .content .title a,
 .rn-blog .inner .content .title a {
     transition: var(--transition);
     color: var(--color-lightn);
     font-weight: 600;
-    font-size: var(--font-size-xl);
-    line-height: 34px;
+    font-size: var(--font-size-md);
+    line-height: 2rem;
     display: inline-block;
 }
 
@@ -19325,7 +19352,7 @@ span.sr-only {
     border-radius: 20px;
     top: 0;
     left: 0;
-    background: linear-gradient(to right bottom, #212428, #16181c);
+    background: linear-gradient(325deg, hsla(var(--hue-dark), 30%, 45%, 100%), hsla(var(--hue-dark), 50%, 15%, 100%));
     opacity: 0;
     z-index: -1;
 }
