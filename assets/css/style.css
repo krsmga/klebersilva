@@ -14007,6 +14007,7 @@ figcaption {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+    animation: move5 4s infinite ease;
 }
 
 .slide .thumbnail .inner video {
@@ -14014,7 +14015,23 @@ figcaption {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+    animation: move5 4s infinite ease-in-out;
 }
+
+@keyframes move5 {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
 
 .slide .thumbnail.box-gradient::before {
     width: 100%;
@@ -15043,7 +15060,7 @@ figcaption {
 -----------------------------*/
 .rn-service {
     text-align: left;
-    padding: 35px 50px 35px 50px;
+    padding: 35px 35px 35px 35px;
     transition: 0.5s all ease-in-out;
     position: relative;
     border-radius: 10px;
@@ -15081,7 +15098,7 @@ figcaption {
 }
 
 .rn-service .inner .icon {
-    margin-bottom: 29px;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -15101,8 +15118,8 @@ figcaption {
     font-family: var(--color-primary);
     font-weight: 500;
     font-size: var(--font-size-xl);
-    line-height: 32px;
-    margin-bottom: 20px;
+    line-height: 1rem;
+    margin-bottom: 1rem;
     color: var(--color-lightn);
 }
 
@@ -20134,7 +20151,7 @@ Rn Slick Dots Style
     width: 60px;
     height: 60px;
     line-height: 60px;
-    background: var(--background-color-1);
+    background: var(--color-primary);
     box-shadow: var(--shadow-1);
     border: 0 none;
     top: 50px;
@@ -20195,11 +20212,11 @@ Rn Slick Dots Style
 }
 
 .testimonial-activation button.slide-arrow:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .testimonial-activation button.slide-arrow:hover::after {
-    opacity: 1;
+    opacity: .2;
 }
 
 .testimonial-activation .slick-dots {
