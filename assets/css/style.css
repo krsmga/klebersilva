@@ -7715,6 +7715,9 @@ textarea:-ms-input-placeholder {
     transform-style: preserve-3d;
     transform: rotateY(-10deg);
     filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -ms-filter: blur(50px);
 }
 
 #scrollUp::after {
@@ -12018,6 +12021,9 @@ body.template-color-1 {
     box-shadow: 0px 16px 20px #0a0a2a;
     position: fixed;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    -ms-backdrop-filter: blur(15px);
     top: 0;
 }
 
@@ -18410,6 +18416,7 @@ span.sr-only {
     background-color: var(--background-color-1);
     box-shadow: var(--shadow-1);
     filter: blur(1px);
+    
     z-index: -1;
 }
 
