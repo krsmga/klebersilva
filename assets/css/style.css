@@ -18623,12 +18623,6 @@ span.sr-only {
     margin: 0;
 }
 
-.portfolio-popup-thumbnail {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .portfolio-popup-thumbnail img {
     border-radius: 0.5rem;
 }
@@ -19171,10 +19165,9 @@ span.sr-only {
 -----------------------------*/
 .rn-portfolio,
 .rn-blog {
-    text-align: left;
-    padding: 30px;
+    text-align: left;    
     position: relative;
-    border-radius: 20px;
+    border-radius: 0.5rem;
     background: var(--background-color-1);
     box-shadow: var(--shadow-1);
     position: relative;
@@ -19184,27 +19177,11 @@ span.sr-only {
     display: inline-block;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    .rn-portfolio,
-    .rn-blog {
-        padding: 30px;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-
-    .rn-portfolio,
-    .rn-blog {
-        padding: 20px;
-    }
-}
-
 .rn-portfolio .inner .thumbnail a,
 .rn-blog .inner .thumbnail a {
     display: block;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .rn-portfolio .inner .thumbnail a img,
@@ -19212,7 +19189,6 @@ span.sr-only {
     width: 100%;
     transition: var(--transition);
     height: auto;
-    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -19242,7 +19218,7 @@ span.sr-only {
 
 .rn-portfolio .inner .content,
 .rn-blog .inner .content {
-    padding-top: 18px;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .rn-portfolio .inner .content .category-info,
@@ -19264,7 +19240,7 @@ span.sr-only {
     color: var(--color-primary);
     font-weight: 500;
     font-family: var(--font-primary);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     letter-spacing: 1px;
     text-transform: uppercase;
     display: block;
@@ -19297,15 +19273,11 @@ span.sr-only {
     margin: 0;
 }
 
-.rn-portfolio .inner .content .description {
-    font-size: var(--font-size-md);
-}
-
 .rn-portfolio .inner .content .title a,
 .rn-blog .inner .content .title a {
     transition: var(--transition);
     color: var(--color-lightn);
-    font-weight: 600;
+    
     font-size: var(--font-size-md);
     line-height: 2rem;
     display: inline-block;
@@ -19331,7 +19303,7 @@ span.sr-only {
 
 .rn-portfolio .inner .content .title:hover a,
 .rn-blog .inner .content .title:hover a {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .rn-portfolio .inner .content .title:hover a i,
