@@ -18255,6 +18255,17 @@ span.sr-only {
     margin-right: 20px;
 }
 
+.rn-about-area .video-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.rn-about-area .video-area video{
+    width: 100%;
+    border-radius: 8px;
+}
+
 @media only screen and (max-width: 479px) {
     .rn-about-area .image-area {
         margin-right: 0;

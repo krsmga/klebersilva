@@ -1625,7 +1625,7 @@
                 <div class="col-lg-6">
                   <div class="portfolio-popup-thumbnail">
                     <div class="image">
-                      <video controls poster="assets/videos/unicesumarxp-teaser2-720p.jpg">
+                      <video id="videoPortfolio1" controls poster="assets/videos/unicesumarxp-teaser2-720p.jpg">
                         <source src="assets/videos/unicesumarxp-teaser2-720p.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -1672,7 +1672,7 @@
                 <div class="col-lg-6">
                   <div class="portfolio-popup-thumbnail">
                     <div class="image">
-                      <video controls poster="assets/videos/unicesumarxp-teaser-1-720p.jpg">
+                      <video id="videoPortfolio2" controls poster="assets/videos/unicesumarxp-teaser-1-720p.jpg">
                         <source src="assets/videos/unicesumarxp-teaser-1-720p.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -1718,7 +1718,7 @@
                 <div class="col-lg-6">
                   <div class="portfolio-popup-thumbnail">
                     <div class="image">
-                      <video controls poster="assets/videos/game-resort-hotel-720p.jpg">
+                      <video id="videoPortfolio3" controls poster="assets/videos/game-resort-hotel-720p.jpg">
                         <source src="assets/videos/game-resort-hotel-720p.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -1819,7 +1819,7 @@
                 <div class="col-lg-6">
                   <div class="portfolio-popup-thumbnail">
                     <div class="image">
-                      <video controls poster="assets/videos/aula-happycode-720p.jpg">
+                      <video id="videoPortfolio5" controls poster="assets/videos/aula-happycode-720p.jpg">
                         <source src="assets/videos/aula-happycode-720p.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -1861,7 +1861,7 @@
                 <div class="col-lg-6">
                   <div class="portfolio-popup-thumbnail">
                     <div class="image">
-                      <video controls poster="assets/videos/teaser-artigo-720p.jpg">
+                      <video id="videoPortfolio6" controls poster="assets/videos/teaser-artigo-720p.jpg">
                         <source src="assets/videos/teaser-artigo-720p.mp4" type="video/mp4" />
                       </video>
                     </div>
@@ -2113,8 +2113,10 @@
               <div class="row align-items-top">
                 <div class="col-lg-5">
                   <div class="portfolio-popup-thumbnail">
-                    <div class="image">
-                      <img class="w-100" src="assets/images/portfolio/3d-modeling.jpg" alt="slide" />
+                    <div class="image">                      
+                      <video id="video3DModeling" controls poster="assets/images/portfolio/3d-modeling.jpg">
+                        <source src="assets/videos/modeling-tardis-720p.mp4" type="video/mp4" />
+                      </video>
                     </div>
                   </div>
                 </div>
@@ -2223,10 +2225,24 @@
             }
         }
 
+        function stopVideo(videoId)
+        {
+            var video = document.getElementById(videoId);
+            video.pause();
+        }
+
         $(document).ready(function() {
             openModalOnHash()
+
+            $("#modalPortfolio1").on('hide.bs.modal', function() { stopVideo('videoPortfolio1'); });
+            $("#modalPortfolio2").on('hide.bs.modal', function() { stopVideo('videoPortfolio2'); });
+            $("#modalPortfolio3").on('hide.bs.modal', function() { stopVideo('videoPortfolio3'); });            
+            $("#modalPortfolio5").on('hide.bs.modal', function() { stopVideo('videoPortfolio5'); });
+            $("#modalPortfolio6").on('hide.bs.modal', function() { stopVideo('videoPortfolio6'); });
+            $("#modal3DModeling").on('hide.bs.modal', function() { stopVideo('video3DModeling'); });
         });
     </script>
+
 
   </body>
 </html>
