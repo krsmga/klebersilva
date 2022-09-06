@@ -2204,6 +2204,23 @@
         var sendEventGA = function(param) {
             gtag('event', param, {'debug_mode':false});            
         }
+
+        function openModalOnHash() 
+        {
+            if(window.location.hash) 
+            {
+                var hash = window.location.hash.substring(0,6);
+                if (hash == '#modal')
+                {
+                    hash = window.location.hash.substring(1);
+                    $('#'+hash).modal('show');
+                }                
+            }
+        }
+
+        $(document).ready(function() {
+            openModalOnHash()
+        });
     </script>
 
   </body>
